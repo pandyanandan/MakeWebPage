@@ -101,7 +101,6 @@ body {
 .footer {
   position: relative;
   z-index: 1;
-  max-width: auto;
   margin: 50px;
 }
 .footer  pre {
