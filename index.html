@@ -1,19 +1,54 @@
 <!DOCTYPE html>
-<html >
+<html>
 <head>
   <meta charset="UTF-8">
   <title>Make a Web Page</title>
 
   <link rel="stylesheet" href="css/reset.min.css">
   <link rel='stylesheet prefetch' href='https://fonts.googleapis.com/css?family=Roboto:400,100,300,500,700,900'>
-<link rel='stylesheet prefetch' href='https://fonts.googleapis.com/css?family=Montserrat:400,700'>
-<link rel='stylesheet prefetch' href='https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css'>
-      <link rel="stylesheet" href="css/style.css">
+  <link rel='stylesheet prefetch' href='https://fonts.googleapis.com/css?family=Montserrat:400,700'>
+  <link rel='stylesheet prefetch' href='https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css'>
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+<div class="footer">
+  <center><h1><a name ="top">Welcome To World Of Html</a></h1></center>
+  <h2>HTML Forms</h2>
+HTML forms are used to pass data to a server.<br>
+A form can contain input elements like text fields,checkboxes, radio-buttons, submit buttons and more. A form can also contain select lists, textarea, fieldset, legend, and label elements.The &lt;form&gt; tag is used to create an HTML form:<br>
+<pre><b>
+&lt;form&gt;
+...
+input elements
+...
+&lt;/form&gt;
+</pre></b>
+<h3 class="heading">HTML Forms - The Input Element</h3>
+The most important form element is the input element.The input element is used to select user information.<br>An input element can vary in many ways, depending on the type attribute. An input element can be of type text field,checkbox,password,radio button,submit button,and more.<br>The most used input types are described below.
+<h3 class="heading">Text Fields</h3>
+<pre><b>
+&lt;form&gt;
+&lt;input type="text"/&gt;defines a one-line input field that a user can enter text into:
+*First name: &lt;input type="text" name="firstname"/&gt;
+*Last name: &lt;input type="text" name="lastname" /&gt;
+Note: The form itself is not visible. Also note that the default width of a text field is 20 characters.
+*Password Field
+&lt;input type="password"/&gt;defines a password field:
+Note: The characters in a password field are masked (shown as asterisks or circles).
+*Radio Buttons
+&lt;input type="radio"/&gt; defines a radio button. Radio buttons let a user select ONLY ONE one of a limited number of choices:
+&lt;input type="radio" name="y" value="Yes"/&gt;Yes
+&lt;input type="radio" name="y" value="No"/&gt; No
+*Checkboxes
+&lt;input type="checkbox"/&gt; defines a checkbox. Checkboxes let a user select ONE or MORE options of a limited number of choices.
+&lt;input type="checkbox" name="vehicle" value="Bike"/&gt; I have a bike
+&lt;input type="checkbox" name="vehicle" value="Car"/&gt; I have a car
+</div>
+
 <div class="container">
   <div class="info">
     <h1>Make a Web Page</h1><span>For Udacity IPND Project 2</span>
+    <span><a href="nandanpandya.com">Created by Nandan</a><span>
   </div>
 </div>
 <div class="form">
@@ -24,6 +59,80 @@
     <button>Login</button>
     <p class="message">Not registered? <a href="#">Create an account</a></p>
   </form>
+</div>
+
+<div class="footer">
+  <h2>HTML Lists<br>
+There are four types of the lists<br>
+1)Unordered Lists<br>
+2)ordered Lists<br>
+3)Defination Lists<br>
+4)Nested lists</h2><br>
+
+<h3 class="heading">1)Unordered Lists<br></h3>
+Lists follow a common skeleton every time — an outer container tag,and a new tag for each bullet. Observe:<br>
+<pre><b>
+&lt;ul&gt;
+  &lt;li&gt;Bullet 1&lt;/li&gt;
+  &lt;li&gt;Bullet 2&lt;/li&gt;
+  &lt;li&gt;Bullet 3&lt;/li&gt;</b>
+</ul>
+</pre>
+Which would create:<br>
+•Bullet 1<br>
+•Bullet 2<br>
+•Bullet 3<br>
+	Let’s explain:<br>
+	&lt;ul&gt;<br>stands for Unordered List, which means that the bullets are not ranked or numbered in any way, they’re all the same.<br>
+	&lt;li&gt;<br>
+means List Item, each one corresponding to a bullet.<br>
+	<p>Closing &lt;/li&gt; tags are not strictly necessary in HTML 4, but I recommend that you always use them. They’ll help your stylesheets work better and will make a future transition to XHTML much easier.Leaving them out now may leave you with a tonne of work in the future.<br>
+	<p>You also don’t need to add in line breaks to go on to the next point, 	it will all be taken care of for you. Once a block of text is made into a bullet you can continue on formatting the text normally, and adding in paragraphs, images and the like.<br>
+	<br>Different bullets<br>
+	<p>It’s a simple matter of adding an attribute to change the nature of your bullets.
+For squareones, add type="square", and for empty circles, add type="circle" to the ul tag.They can also be added to list to affect individual points. Examples:<br>
+	Is it a square? Oh, good.<br>
+	o And this is a circle. Joy.<br>
+	<p>If you nest your lists (put one inside another), they will be indented 	underneath and the bullet type will change to show the transition, 	from disc (the default, full circle) to circle tosquare. Of course you 	can step in and change this order manually if you want. Note that 	these values must all be in lowercase.<br>
+	<h3 class="heading">2)Ordered Lists<br></h3>
+If you want your list to be ordered instead of unordered,it’s a simple matter of just substituting the <br>&lt;ul&gt; elements with &lt;ol&gt;s, which of course stand for Ordered Lists.
+<pre><b>
+&lt;ol&gt;
+  &lt;li&gt;List Item 1&lt;/li&gt;
+  &lt;li&gt;List Item 2&lt;/li&gt;
+  &lt;li&gt;List Item 3&lt;/li&gt;
+&lt;/ol&gt;</b>
+</pre>
+	This will create:
+	1.	List Item 1
+	2.	List Item 2
+	3.	List Item 3
+	<p>See All that was changed was that one letter. Beyond that, the rest 	of the structure remains intact, meaning you still use lis the same 	you did already. Your browser will keep adding numbers if you keep		adding list items. You can add or take away any of the items and 	thelist will renumber itself into order.
+	<p>You can nest different types of lists into each other if you want, 	just remember to close them correctly. The progression of bullet-types 	that happens when you nest still occurs if you put it under an ol.
+	<p>Different types of numbers
+	You can change the stylings of your ordered lists too, with the same 	attribute syntax as before, just using different values. You can do 	Roman numerals, letters, and both of the above in small characters.
+	<br>The full list:<br>
+	A.	type="A"<br>
+	b.	type="a"<br>
+	III.	type="I"<br>
+	iv.	type="i"<br>
+	<p>Note:-that even if the list was to be labelled ’b’ or ’iv’, the 	attribute value is still set as the first number-i.e. ‘a’ and ‘i’.
+	<p>Changing the start-point
+	<p>If you need to start the count at a number other than 1, you just add another attribute, like so:<BR>
+	&lt;ol start="5"&gt;
+<p>You can also step in the middle of a list and change the number of an item (and therefore all of the items that follow).Add value="9" to an item and the list will skip its numbering to 9 and then continue on to ten and onwards from there.<br>
+<h3 class="heading">3)Defination Lists<br></h3>
+<p>A definition list is a list of terms and correspond ingdefinitions.Definition lists are typically formatted with the term on the left with the definition following on the right or on the next line. The definition text is typically indented with respect to the term.
+	<p>An alternative format places the term left aligned in a wide margin and the definition on one or more lines to the right of the 	term. If the DT term does not fit in the DT column (one third of the display area), it may be extended across the page with the &lt;DD&gt; section moved to the next line, or it may be wrapped onto successive lines of the left hand column.
+		<p>The opening list tag must be &lt;DL&gt;.It is followed by an optional list header &lt;LH&gt;caption&lt;/LH&gt; and then by term names &lt;DT&gt;and definitions &lt;DD&gt;. <br><p>For example:
+<pre><b>
+&lt;DL&gt;
+&lt;LH&gt;List Header&lt;/LH&gt;
+&lt;DT&gt;Term 1&lt;dd&gt;This is the definition of the first term.
+&lt;DT&gt;Term 2&lt;dd&gt;This is the definition of the second term.
+&lt;/DL&gt;</b></pre>
+<h3 class="heading">4) Nested Lists</h3>
+Nested liste is combination of all above lists.<br>
 </div>
 </body>
 </html>
